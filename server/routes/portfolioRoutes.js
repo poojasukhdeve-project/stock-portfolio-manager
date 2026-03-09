@@ -103,10 +103,13 @@ router.get("/", protect, async (req, res) => {
     let totalInvested = 0;
     let totalCurrentValue = 0;
 
-    portfolio.forEach(item => {
-      totalInvested += item.investedAmount;
-      totalCurrentValue += item.stock.currentPrice * item.quantity;
-    });
+   portfolio.forEach(item => {
+  totalInvested += item.investedAmount;
+
+  if (item.stock) {
+    totalCurrentValue += item.stock.currentPrice * item.quantity;
+  }
+  });
 
     const profitLoss = totalCurrentValue - totalInvested;
 
