@@ -1,4 +1,4 @@
-# 💼 Stock Portfolio Manager (Full-Stack FinTech Application)
+# 💼 Stock Portfolio Manager — Full-Stack FinTech Application
 
 A full-stack financial web application that enables users to track stocks, manage investment portfolios, and monitor performance. The system is designed with secure authentication, scalable backend architecture, and a clean user interface for seamless portfolio management.
 
